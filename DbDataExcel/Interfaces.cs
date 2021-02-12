@@ -1,6 +1,7 @@
 ﻿
 using System.Collections.Generic;
 using System.Text;
+using System.Data;
 
 namespace ES.DB.DbDataExcel
 {
@@ -9,11 +10,9 @@ namespace ES.DB.DbDataExcel
     /// Реализация данного интерфейса - в классе, кот. выполняет получение данных из файла Excel.
     /// <see href="https://metanit.com/sharp/tutorial/3.9.php"/>
     /// </summary>
-    interface IExcelDb
+     interface IExcelDb<T>
     {
-        System.Data.DataSet GetDataFromExcel();
-        System.IO.Path PathExcelFile { get; set; }
-
+        T GetDataFromExcel();
     }
 
     /// <summary>
