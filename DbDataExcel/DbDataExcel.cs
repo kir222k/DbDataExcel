@@ -6,11 +6,25 @@ using System.Data;
 
 namespace ES.DB.DbDataExcel
 {
+    /// <summary>
+    /// Получение даныых из Excel.
+    /// </summary>
    public class DbDataExcel : IExcelDb<DataSet>
     {
+
+        /// <summary>
+        /// Получение данных.
+        /// </summary>
+        /// <param name="PathExcelFile">Путь к файлу Excel.</param>
+        /// <returns>Объект типа DataSet, кот. содержит таблицы <br/>
+        /// по числу Листов в файле Excel.</returns>
         public DataSet GetDataFromExcel(string PathExcelFile)
 
         {
+            // 1) Подключить DataSet Reader
+            // 2) .. Newtone.Soft
+
+
             //DataSet Ds = null;
             //return Ds;
             return null;

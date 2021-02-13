@@ -34,15 +34,15 @@ namespace ES.DB.DbDataExcel
     public class EsDataModify : ICreateEsData<EsData>
     {
         // 1) Получаем данные из Excel. 
-        //    Достаем нужную таблицу
+        //    Достаем нужную таблицу, передаем ее как параметр метода CreateEsData
 
 
 
-        // 2) Создаем экз. класса, кот. дальше будем 
+        // 2) Создаем и возвращаем экз. класса, кот. дальше будем 
         //    сериализовывать или/и загонять в БД.
         public EsData CreateEsData()
         {
-            // 1) Запросить название Листа Excel
+            // 1) Запросить название Листа Excel(из консоли)
             // 2) Запросить Note
             // 3) Сообщить, что заголовки столбцов будут взяты из 1:1 (1 строка в Листе Excel)
 
@@ -50,9 +50,9 @@ namespace ES.DB.DbDataExcel
             // Для теста из консоли
             EsData ED = new EsData()
             {
-                NoteData = "Note",
-                TypeData = "TypeData",
-                DTableHeaders = new string[2] { "1", "2" }
+                NoteData = "Note", // задать как параметр метода
+                TypeData = "TypeData", // задать как параметр метода
+                DTableHeaders = new string[2] { "1", "2" } // задается при разборе таблицы
             };
             return ED;
         }

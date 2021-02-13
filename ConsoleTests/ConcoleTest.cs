@@ -7,13 +7,20 @@ namespace ConsoleTests
     {
         static void Main(string[] args)
         {
+            // Экз. класса по работе с данными Excel.
             EsDataModify EsMod = new EsDataModify();
+            // Создадим объект EsData.
             var EsDt = EsMod.CreateEsData();
 
-            Console.WriteLine($"EsDt.NoteData= {EsDt.NoteData}" +
-                $"EsDt.TypeData= { EsDt.TypeData}"+
-                $"EsDt.DTableHeaders= {EsDt.DTableHeaders}");
-
+            // Проверим, что получилось.
+            Console.WriteLine($"EsDt.NoteData= {EsDt.NoteData}\n" +
+                $"EsDt.TypeData= { EsDt.TypeData}\n"+
+                $"EsDt.DTableHeaders= {EsDt.DTableHeaders}\n");
+            /* -- list from console --
+            EsDt.NoteData= Note
+            EsDt.TypeData= TypeData
+            EsDt.DTableHeaders= System.String[]
+            */
         }
     }
 }
