@@ -4,6 +4,9 @@ using FileSystems;
 
 namespace ConsoleTests
 {
+    /// <summary>
+    /// Консоль для работы с миграцией данных из *.xlsx
+    /// </summary>
     class ConcoleTest
     {
         static void Main()
