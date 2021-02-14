@@ -24,8 +24,8 @@ namespace ConsoleTests
             EsDt.DTableHeaders= System.String[]
             */
 
-            FileDialog FD = new FileDialog();
-            string filePath = FD.GetFullPathFile();
+            // FileDialog FD = new FileDialog();
+            string filePath = FileDialog.GetFullPathFile();
             Console.WriteLine(filePath);
 
 
