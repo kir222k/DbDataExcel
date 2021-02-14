@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DbDataExcel\DbDataExcel.csproj" />
+    <ProjectReference Include="..\FileSystems\FileSystems.csproj" />
   </ItemGroup>
 
 </Project>

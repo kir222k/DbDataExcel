@@ -1,12 +1,14 @@
 ﻿using System;
 using ES.DB.DbDataExcel;
+using FileSystems;
 
 namespace ConsoleTests
 {
     class ConcoleTest
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            /*
             // Экз. класса по работе с данными Excel.
             EsDataModify EsMod = new EsDataModify();
             // Создадим объект EsData.
@@ -21,6 +23,12 @@ namespace ConsoleTests
             EsDt.TypeData= TypeData
             EsDt.DTableHeaders= System.String[]
             */
+
+            FileDialog FD = new FileDialog();
+            string filePath = FD.GetFullPathFile();
+            Console.WriteLine(filePath);
+
+
         }
-    }
+}
 }

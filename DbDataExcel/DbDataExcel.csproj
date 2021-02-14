@@ -5,4 +5,13 @@
     <RootNamespace>ES.DB.DbDataExcel</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileSystems\FileSystems.csproj" />
+  </ItemGroup>
+
 </Project>

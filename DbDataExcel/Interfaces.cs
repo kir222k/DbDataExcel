@@ -44,6 +44,7 @@ namespace ES.DB.DbDataExcel
     interface ICreateEsData<T>
     {
         T CreateEsData();
+        string[] CreateHeadersTable();
     }
 
 

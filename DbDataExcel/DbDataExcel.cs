@@ -3,26 +3,40 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Data;
+using FileSystems;
 
 namespace ES.DB.DbDataExcel
 {
     /// <summary>
     /// Получение даныых из Excel.
     /// </summary>
-   public class DbDataExcel : IExcelDb<DataSet>
+    /// <remarks>Используется библиотека ExcelDataReader.DataSet: <br/>
+    /// <see href="https://github.com/ExcelDataReader/ExcelDataReader"/>
+    /// </remarks>
+
+    public class DbDataExcel : IExcelDb<DataSet>
     {
 
         /// <summary>
         /// Получение данных.
         /// </summary>
-        /// <param name="PathExcelFile">Путь к файлу Excel.</param>
+        /// <param name="pathExcelFile">Путь к файлу Excel.</param>
         /// <returns>Объект типа DataSet, кот. содержит таблицы <br/>
         /// по числу Листов в файле Excel.</returns>
-        public DataSet GetDataFromExcel(string PathExcelFile)
+        public DataSet GetDataFromExcel(string pathExcelFile)
 
         {
-            // 1) Подключить DataSet Reader
-            // 2) .. Newtone.Soft
+            // Если пут к файлу корректный.
+            if (FileCheck.IsFileNameValid(pathExcelFile))
+            {
+
+            }
+
+            // Подключить: - перенести в отдельный проект по сериализации
+
+            // * Работа с сериализацией:
+            //    Newtonsoft.Json
+            //    https://www.newtonsoft.com/json
 
 
             //DataSet Ds = null;
