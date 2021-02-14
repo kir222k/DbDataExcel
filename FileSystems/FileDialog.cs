@@ -8,7 +8,7 @@ namespace FileSystems
 {
     public static class FileDialog
     {
-
+        //
         /// <summary>
         /// <see href="https://csharp.hotexamples.com/ru/examples/-/Ookii.Dialogs.Wpf.VistaOpenFileDialog/-/php-ookii.dialogs.wpf.vistaopenfiledialog-class-examples.html"/>
         /// </summary>
