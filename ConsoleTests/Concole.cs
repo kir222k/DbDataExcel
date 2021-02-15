@@ -55,7 +55,7 @@ namespace ConsoleTests
             Console.WriteLine(textHelp);
             Console.WriteLine($"{TextHelp}\n");
 
-            // DataSet
+            // DataSet,
             DataSet Ds;
             // экз. класса по работе с *.xlsx
             var DbData = new DbDataExcel();
