@@ -191,7 +191,7 @@ namespace ConsoleTests
                 var cells = row.ItemArray;
                 foreach (object cell in cells)
                     //Console.Write("\t{0}", cell);
-                    Console.Write("{0,-15}", cell);
+                    Console.Write("{0,-30}", cell);
                 Console.WriteLine();
             }
 
